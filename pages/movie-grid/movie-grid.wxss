@@ -1,0 +1,29 @@
+/* pages/movie-grid/movie-grid.wxss */
+@import "/pages/movie-starLevel/movie-starLevel";
+.movie-wrapper{
+  display: inline-block;
+  margin: 0 10rpx;
+}
+.movie-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie-container .post{
+  height: 280rpx;
+  width: 200rpx;
+}
+.movie-container .name{
+  width: 200rpx;
+  color: #4a4a4a;
+  font-weight: 500;
+  font-size: 28rpx;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.movie-container .wish-counst{
+  color:#c9c9c9;
+  font-size: 24rpx;
+}

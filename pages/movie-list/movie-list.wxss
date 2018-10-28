@@ -1,0 +1,53 @@
+/* pages/movie-list/movie-list.wxss */
+@import "/pages/movie-starLevel/movie-starLevel";
+.movie-wrapper{
+  padding: 30rpx;
+  border-bottom: 3rpx solid #e6e6e6;
+}
+.movie-content{
+  display: flex;
+  flex-direction: row;
+}
+.movie-content .poster{
+  width: 160rpx;
+  height: 240rpx;
+}
+.movie-content .movie-summary{
+  display: flex;
+  flex-direction: column;
+  width: 380rpx;
+  margin: 0 20rpx;
+}
+.movie-summary .name{
+  font-weight: 600;
+  color: black;
+  font-size: 32rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.6;
+}
+.movie-summary .directors,.casts,.genres,.wish-count{
+  font-size: 26rpx;
+  color: #ccc;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.6;
+}
+.movie-content .wish-btn,.ticket-btn{
+  width: 90rpx;
+  height: 50rpx;
+  color: lightblue;
+  font-size: 28rpx;
+  align-self: center;
+  line-height: 50rpx;
+  border-radius: 5rpx;
+  border: 2rpx solid lightblue;
+  text-align: center;
+}
+.movie-content .wish-btn{
+  color: orange;
+  border: 2rpx solid orange;
+}

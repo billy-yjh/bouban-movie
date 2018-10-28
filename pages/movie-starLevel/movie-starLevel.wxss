@@ -1,0 +1,55 @@
+/* pages/movie-starLevel/movie-starLevel.wxss */
+.starLevel{
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 0;
+  position: relative;
+}
+.star{
+  background-image: url(http://static.nipic.com/images/works_star_png24.png);
+  width: 55px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: absolute;
+}
+.allstar0{
+  background-position: 0px 0px;
+}
+.allstar1{
+  background-position: 0px -11px;
+}
+.allstar2{
+  background-position: 0px -22px;
+}
+.allstar3{
+  background-position: 0px -33px;
+}
+.allstar4{
+  background-position: 0px -44px;
+}
+.allstar5{
+  background-position: 0,-55px;
+}
+.allstar6{
+  background-position: 0px -66px;
+}
+.allstar7{
+  background-position: 0px -77px;
+}
+.allstar8{
+  background-position: 0px -88px;
+}
+.allstar9{
+  background-position: 0xp -99px;
+}
+.allstar10{
+  background-position: 0px -109px;
+}
+.average{
+  margin-left: 120rpx;
+  font-size: 20rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  color: #888;
+}

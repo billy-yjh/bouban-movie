@@ -1,0 +1,21 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <view class='search'>
+    <icon type='search' font-size='15' class='search-icon'></icon>
+    <input placeholder='搜索电影' class='input-icon' bindinput='searchMove'></input>
+    <text class='cancle-btn' bindtap='cancle'>取消</text>
+  </view>
+  <view class='search-list'>
+    <block wx:for="{{resultList}}" wx:key="item">
+      <view class='movie-wrapper'>
+        <view class='movie-content'>
+          <image class='poster' src='{{item.image}}'></image>
+          <view class='total'>
+            <text class="title">{{item.title}}</text>
+            <text class='desc'>{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

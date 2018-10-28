@@ -1,0 +1,13 @@
+<!--pages/movie-grid/movie-grid.wxml-->
+<import src="/pages/movie-starLevel/movie-starLevel"/>
+<template name="movie-grid">
+  <view class='movie-wrapper'>
+    <view class='movie-container'>
+      <image class='post' src='{{images.medium}}'></image>
+      <text class='name'>{{title}}</text>
+      <template is="movie-starLevel" data="{{rating}}"></template>
+      <text class='wish-counst'>{{collect_count}}人想看</text>
+    </view>
+  </view>
+</template>
+

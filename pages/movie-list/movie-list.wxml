@@ -1,0 +1,23 @@
+<!--pages/movie-list/movie-list.wxml-->
+<import src="/pages/movie-starLevel/movie-starLevel"/>
+<template name="movie-list">
+  <view class="movie-wrapper">
+    <view class='movie-content'>
+      <image class='poster' src='{{images.medium}}'></image>
+      <view class='movie-summary'>
+        <text class='name'>{{title}}</text>
+        <text class='directors'>导演:{{allDirs}}</text>
+        <text class='casts'>主演:{{allCasts}}</text>
+        <text class='genres'>类型：{{allGenres}}</text>
+        <template is="movie-starLevel" data="{{rating}}"></template>
+        <text class='wish-count' style="color:lightblue">{{collect_count}}人想看</text>
+      </view>
+      <block wx:if="{{typeId == 'inTheater'}}">
+        <text class='ticket-btn' bindtap='handleTicket'>购票</text>
+      </block>
+      <block wx:if="{{typeId == 'comingSoon'}}">
+        <text class='wish-btn' bindtap='handleWish'>想看</text>
+      </block>
+    </view>
+  </view>
+</template>

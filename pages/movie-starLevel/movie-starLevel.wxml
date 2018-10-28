@@ -1,0 +1,7 @@
+<!--pages/movie-starLevel/movie-starLevel.wxml-->
+<template name="movie-starLevel">
+  <view class='starLevel'>
+    <view class='star allstar{{rating.average || 0}}'></view>
+    <text class='average'>{{rating.average}}</text>
+  </view>
+</template>
